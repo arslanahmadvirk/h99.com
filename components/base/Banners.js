@@ -1,37 +1,37 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable import/no-unresolved */
-import { styled } from '@mui/material/styles';
-import { Pagination, A11y } from 'swiper';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
-import 'swiper/css/pagination';
+import { styled } from "@mui/material/styles";
+import { Pagination, A11y } from "swiper";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/pagination";
 
 const SwiperWrapper = styled(Swiper)(() => ({
-  position: 'relative',
+  position: "relative",
   borderRadius: 16,
-  overflow: 'hidden',
-  '& .swiper-slide': {
+  overflow: "hidden",
+  "& .swiper-slide": {
     borderRadius: 16,
-    overflow: 'hidden',
-    '& > img': {
-      display: 'block',
-      width: '100%',
+    overflow: "hidden",
+    "& > img": {
+      display: "block",
+      width: "100%",
     },
   },
-  '& .swiper-pagination': {
-    textAlign: 'left',
+  "& .swiper-pagination": {
+    textAlign: "left",
     paddingLeft: 32,
-    '& .swiper-pagination-bullet': {
+    "& .swiper-pagination-bullet": {
       width: 64,
       height: 8,
       borderRadius: 4,
-      backgroundColor: 'rgba(255, 255, 255, 0.8)',
-      '@media (max-width: 767.98px)': {
+      backgroundColor: "rgba(255, 255, 255, 0.8)",
+      "@media (max-width: 767.98px)": {
         width: 32,
         height: 4,
       },
-      '&.swiper-pagination-bullet-active': {
-        backgroundColor: '#fff',
+      "&.swiper-pagination-bullet-active": {
+        backgroundColor: "#fff",
       },
     },
   },

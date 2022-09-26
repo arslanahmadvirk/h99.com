@@ -1,31 +1,30 @@
-import { styled } from '@mui/material/styles';
-import Box from '@mui/material/Box';
-import Link from '@mui/material/Link';
-import Divider from '@mui/material/Divider';
+import { styled } from "@mui/material/styles";
+import Box from "@mui/material/Box";
+import Link from "@mui/material/Link";
+import Divider from "@mui/material/Divider";
 
 const SupportedByWrapper = styled(Box)(() => ({
-  width: '100%',
-  display: 'flex',
-  alignItems: 'center',
-  '& > a': {
-    position: 'relative',
-    display: 'flex',
-    '&:last-child': {
-      '&::after': {
-        display: 'none',
+  width: "100%",
+  display: "flex",
+  "& > a": {
+    position: "relative",
+    display: "flex",
+    "&:last-child": {
+      "&::after": {
+        display: "none",
       },
     },
-    '&::after': {
-      position: 'absolute',
+    "&::after": {
+      position: "absolute",
       content: '""',
       height: 26,
       width: 1,
-      backgroundColor: 'rgba(255, 255, 255, 0.2)',
+      backgroundColor: "rgba(255, 255, 255, 0.2)",
       right: 17.5,
-      top: '50%',
-      transform: 'translateY(-50%)',
+      top: "50%",
+      transform: "translateY(-50%)",
     },
-    '& > img': {
+    "& > img": {
       height: 42,
       marginRight: 35,
     },

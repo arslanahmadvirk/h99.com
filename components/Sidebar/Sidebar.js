@@ -11,45 +11,63 @@ export default function Sidebar() {
         <div className="md:flex-col md:items-stretch md:min-h-full md:flex-nowrap px-0 flex flex-wrap items-center justify-between w-full mx-auto">
             <ul className="md:flex-col md:min-w-full flex flex-col list-none space-y-5 md:space-y-10 md:mt-5 mb-5 mx-auto">
               <li className="items-center mt-5 text-center">
-                <Link href="/dashboard/dashboard">
+                <Link href="/dashboard/deposit">
                   <a
-                   className=" py-2 px-7 rounded-full bg-blue-900"
+                   className=" py-2 px-12 rounded-full bg-blue-900"
                   >
                   
-                    Dashboard
+                    Deposit
                   </a>
                 </Link>
               </li>
 
               <li className="items-center text-center">
-                <Link href="/dashboard/settings">
+                <Link href="/dashboard/withdraw">
                   <a
-                    className=" py-2 px-10 rounded-full bg-blue-900"
+                    className=" py-2 px-11 rounded-full bg-blue-900"
                   >
                 
       
-                    Settings
+                    Withdraw
                   </a>
                 </Link>
               </li>
 
               <li className="items-center text-center">
-                <Link href="/dashboard/tables">
+                <Link href="/dashboard/profile">
                   <a
-                    className=" py-2 px-12 rounded-full bg-blue-900"
+                    className=" py-2 px-6 rounded-full bg-blue-900"
                   >
                     
-                    Tables
+                    Profile Update
                   </a>
                 </Link>
               </li>
 
+              <li className="items-center text-center">
+                <Link href="/dashboard/change-password">
+                  <a
+                     className=" py-2 px-4 rounded-full bg-blue-900" 
+                  > 
+                    Change Password
+                  </a>
+                </Link>
+              </li>
               <li className="items-center text-center">
                 <Link href="/dashboard/maps">
                   <a
-                     className=" py-2 px-12 rounded-full bg-blue-900" 
+                     className=" py-2 px-9 rounded-full bg-blue-900" 
                   > 
-                    Maps
+                    Referral Link
+                  </a>
+                </Link>
+              </li>
+              <li className="items-center text-center">
+                <Link href="/dashboard/maps">
+                  <a
+                     className=" py-2 px-9 rounded-full bg-blue-900" 
+                  > 
+                    Google 2FA
                   </a>
                 </Link>
               </li>

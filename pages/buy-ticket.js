@@ -14,7 +14,7 @@ export default function BuyTicket() {
             Buy Ticket
           </h1>
           <div className="text-center p-2 rounded-full border">
-            <p>Each play cost $2.00</p>
+            <p className="text-white">Each play cost $2.00</p>
           </div>
           <form className="space-y-4 md:space-y-6" action="#">
             <div>
@@ -90,7 +90,7 @@ export default function BuyTicket() {
                 <option value="10">10</option>
               </select>
             </div>
-            <div className="flex row space-x-2">
+            <div className="flex row space-x-2 text-white">
                 <p>Total:</p>
                 <p>$20</p>
             </div>

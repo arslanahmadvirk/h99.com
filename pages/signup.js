@@ -27,7 +27,7 @@ export default function SignUp() {
                 id="username"
                 className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                 placeholder="someone"
-                required=""
+                required
               />
             </div>
             <div>
@@ -43,7 +43,7 @@ export default function SignUp() {
                 id="firstname"
                 className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                 placeholder="someone"
-                required=""
+                required
               />
             </div>
             <div>
@@ -59,7 +59,7 @@ export default function SignUp() {
                 id="lastname"
                 className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                 placeholder="someone"
-                required=""
+                required
               />
             </div>
             <div>
@@ -75,7 +75,7 @@ export default function SignUp() {
                 id="email"
                 className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                 placeholder="name@company.com"
-                required=""
+                required
               />
             </div>
             <div className="flex flex-row space-x-4">
@@ -91,8 +91,8 @@ export default function SignUp() {
                   name="mobilecode"
                   id="mobilecode"
                   className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                  placeholder="xx"
-                  required=""
+                  placeholder="123"
+                  required
                 />
               </div>
               <div className="w-2/3">
@@ -108,7 +108,7 @@ export default function SignUp() {
                   id="phonenumber"
                   className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                   placeholder="123456789"
-                  required=""
+                  required
                 />
               </div>
             </div>
@@ -118,15 +118,15 @@ export default function SignUp() {
                   for="countries"
                   class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
                 >
-                  Coountry code
+                  Country code
                 </label>
                 <input
                   type="text"
                   name="countrycode"
                   id="countrycode"
                   className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                  placeholder="xx"
-                  required=""
+                  placeholder="ID"
+                  required
                 />
               </div>
               <div className="w-2/3">
@@ -141,8 +141,8 @@ export default function SignUp() {
                   name="country"
                   id="country"
                   className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                  placeholder="abc"
-                  required=""
+                  placeholder="Indonesia"
+                  required
                 />
               </div>
             </div>
@@ -159,7 +159,7 @@ export default function SignUp() {
                 id="password"
                 placeholder="••••••••"
                 className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                required=""
+                required
               />
             </div>
             <div>
@@ -175,7 +175,7 @@ export default function SignUp() {
                 id="confirmpassword"
                 placeholder="••••••••"
                 className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                required=""
+                required
               />
             </div>
             <div className="flex items-start">
@@ -185,7 +185,7 @@ export default function SignUp() {
                   aria-describedby="iagree"
                   type="checkbox"
                   className="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-primary-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-primary-600 dark:ring-offset-gray-800"
-                  required=""
+                  required
                 />
               </div>
               <div className="ml-3 text-sm">
