@@ -1,21 +1,21 @@
 /* eslint-disable react/jsx-props-no-spreading */
 /* eslint-disable react/prop-types */
-import { ThemeProvider, createTheme } from '@mui/material/styles';
-import CssBaseline from '@mui/material/CssBaseline';
-import '../styles/globals.css';
-import Layout from '../components/layouts/MainLayout';
+import { ThemeProvider, createTheme } from "@mui/material/styles";
+import CssBaseline from "@mui/material/CssBaseline";
+import "../styles/globals.css";
+import Layout from "../components/layouts/MainLayout";
 
 const theme = createTheme({
   palette: {
     primary: {
-      light: '#ffffff',
-      main: '#FACA46',
-      dark: '#25324b',
+      light: "#ffffff",
+      main: "#FACA46",
+      dark: "#25324b",
     },
     secondary: {
-      light: '#ffffff',
-      main: '#FACA46',
-      dark: '#25324b',
+      light: "#ffffff",
+      main: "#FACA46",
+      dark: "#25324b",
     },
   },
   typography: {
@@ -33,30 +33,30 @@ const theme = createTheme({
     MuiTypography: {
       styleOverrides: {
         gutterBottom: {
-          marginBottom: '16px',
+          marginBottom: "16px",
         },
       },
     },
     MuiButton: {
       styleOverrides: {
         root: ({ ownerState }) => ({
-          ...(ownerState.variant === 'contained'
-            && ownerState.color === 'primary' && {
-            backgroundColor: theme.palette.primary.main,
-          }),
-          ...(ownerState.variant === 'contained'
-            && ownerState.color === 'inherit' && {
-            backgroundColor: theme.palette.primary.light,
-          }),
-          ...(ownerState.size === 'small'
-            ? {
-              padding: '2px 20px',
-            }
-            : {
-              padding: '6px 24px',
+          ...(ownerState.variant === "contained" &&
+            ownerState.color === "primary" && {
+              backgroundColor: theme.palette.primary.main,
             }),
+          ...(ownerState.variant === "contained" &&
+            ownerState.color === "inherit" && {
+              backgroundColor: theme.palette.primary.light,
+            }),
+          ...(ownerState.size === "small"
+            ? {
+                padding: "2px 20px",
+              }
+            : {
+                padding: "6px 24px",
+              }),
           borderRadius: 8,
-          textTransform: 'none',
+          textTransform: "none",
           fontSize: 16,
           fontWeight: 400,
         }),
@@ -70,14 +70,12 @@ const theme = createTheme({
 
 function App({ Component, pageProps }) {
   return (
-   
     <ThemeProvider theme={theme}>
       <CssBaseline />
       <Layout>
-      <Component {...pageProps} />
+        <Component {...pageProps} />
       </Layout>
     </ThemeProvider>
-   
   );
 }
 

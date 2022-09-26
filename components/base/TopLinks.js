@@ -8,7 +8,7 @@ import { useState } from "react";
 function TopLinks() {
   const [loggedin, setLoggedin] = useState(false);
   return (
-    <div className="flex mx-auto w-3/5 py-3">
+    <div className="flex mx-auto w-4/5 py-3">
       <IconButton color="primary" aria-label="upload picture" component="label">
         <input hidden accept="image/*" type="file" />
         <img

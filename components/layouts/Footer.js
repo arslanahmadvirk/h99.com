@@ -150,22 +150,6 @@ function FooterComponent() {
               COPYRIGHT © 2021 J9 Group All Rights Reserved.Gambling can be
               addictive. Play responsibly.
             </Typography>
-            <div className="footer__additional">
-              <div className="footer__navs">
-                <Link href="/">
-                  <a>General terms</a>
-                </Link>
-                <Link href="/">
-                  <a>About Us</a>
-                </Link>
-                <Link href="/">
-                  <a>Contact us</a>
-                </Link>
-                <Link href="/">
-                  <a>Download APP</a>
-                </Link>
-              </div>
-            </div>
           </div>
         </div>
       </Container>
