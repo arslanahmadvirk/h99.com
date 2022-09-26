@@ -1,0 +1,130 @@
+[
+  {
+    "id": "1",
+    "name": "Bull Bull",
+    "srcImg": "https://staticff.kvwuua.com/group1/M00/00/68/rBSMGGKCHgyADhE1AABAzktbRRA47.webp",
+    "bgImg": "https://staticff.kvwuua.com/group1/M00/00/66/rBQVwGJ9wFqAdTvlAAENIMdmR1w01.webp",
+    "url": "/",
+    "new": false
+  },
+  {
+    "id": "2",
+    "name": "Win 3 Cards",
+    "srcImg": "https://staticff.kvwuua.com/group1/M00/00/69/rBQVwGKCHh2AO3jjAABKJpX4LH072.webp",
+    "bgImg": "https://staticff.kvwuua.com/group1/M00/00/66/rBQVwGJ9v-WASWmIAAGuEugiSnA78.webp",
+    "url": "/",
+    "new": false
+  },
+  {
+    "id": "3",
+    "name": "Dragon Tiger",
+    "srcImg": "https://staticff.kvwuua.com/group1/M00/00/69/rBQVwGKCHkGAUQSSAABHXAsXG9Y78.webp",
+    "bgImg": "https://staticff.kvwuua.com/group2/M00/02/E2/rBQVwWJ9zOmAPkKYAAGlGBt3RpQ82.webp",
+    "url": "/",
+    "new": false
+  },
+  {
+    "id": "4",
+    "name": "Roulette",
+    "srcImg": "https://staticff.kvwuua.com/group1/M00/00/68/rBSMGGKCHlCAKc2gAABFvN62dgk18.webp",
+    "bgImg": "https://staticff.kvwuua.com/group2/M00/02/E2/rBQVwWJ9zSeAU9zgAADj1iqUGlQ19.webp",
+    "url": "/",
+    "new": false
+  },
+  {
+    "id": "5",
+    "name": "Sicbo",
+    "srcImg": "https://staticff.kvwuua.com/group2/M00/02/FE/rBQVwWKPSouAH2MlAABA3gZYv7I06.webp",
+    "bgImg": "https://staticff.kvwuua.com/group2/M00/00/82/rBSMGWKPSoiAAFtTAACJyvJDXm864.webp",
+    "url": "/",
+    "new": false
+  },
+  {
+    "id": "6",
+    "name": "Blackjack",
+    "srcImg": "https://staticff.kvwuua.com/group2/M00/02/FE/rBQVwWKPSr2AWu5WAABLQm7PN-g43.webp",
+    "bgImg": "https://staticff.kvwuua.com/group2/M00/00/82/rBSMGWKPSrqAEYVtAAB0nuN5fVk71.webp",
+    "url": "/",
+    "new": false
+  },
+  {
+    "id": "7",
+    "name": "Three Face",
+    "srcImg": "https://staticff.kvwuua.com/group2/M00/02/FF/rBQVwWKPSzuAJ55hAABF_HzsxbM49.webp",
+    "bgImg": "https://staticff.kvwuua.com/group2/M00/00/83/rBSMGWKPSziAMxkyAAB2yOybabw98.webp",
+    "url": "/",
+    "new": false
+  },
+  {
+    "id": "8",
+    "name": "Win Three Cards",
+    "srcImg": "https://staticff.kvwuua.com/group2/M00/02/FF/rBQVwWKPS2eAa_ZUAABNRvRUpnQ77.webp",
+    "bgImg": "https://staticff.kvwuua.com/group2/M00/00/83/rBSMGWKPS2WAMuCTAABUthwNThE61.webp",
+    "url": "/",
+    "new": false
+  },
+  {
+    "id": "9",
+    "name": "Dragon Tiger",
+    "srcImg": "https://staticff.kvwuua.com/group2/M00/02/FE/rBQVwWKPSvKACnJCAABIsEp9Zc448.webp",
+    "bgImg": "https://staticff.kvwuua.com/group2/M00/00/83/rBSMGWKPSu-AWs7OAAA8OsyC66092.webp",
+    "url": "/",
+    "new": false
+  },
+  {
+    "id": "10",
+    "name": "Sicbo",
+    "srcImg": "https://staticff.kvwuua.com/group2/M00/02/FF/rBQVwWKPSy6AJJZRAABDrAVbPDM78.webp",
+    "bgImg": "https://staticff.kvwuua.com/group2/M00/00/83/rBSMGWKPSyyAHFMwAABvoPb5_9Y42.webp",
+    "url": "/",
+    "new": false
+  },
+  {
+    "id": "11",
+    "name": "Bull Bull",
+    "srcImg": "https://staticff.kvwuua.com/group2/M00/02/FE/rBQVwWKPSs6AZYUIAABDuoX54sk15.webp",
+    "bgImg": "https://staticff.kvwuua.com/group2/M00/00/83/rBSMGWKPSsqAViOHAACbzsK9_PU77.webp",
+    "url": "/",
+    "new": false
+  },
+  {
+    "id": "12",
+    "name": "Roulette",
+    "srcImg": "https://staticff.kvwuua.com/group2/M00/02/FE/rBQVwWKPSwaAeOgWAABEPnqMWEc77.webp",
+    "bgImg": "https://staticff.kvwuua.com/group2/M00/00/83/rBSMGWKPSwSANkVgAABkImXDZMc53.webp",
+    "url": "/",
+    "new": false
+  },
+  {
+    "id": "13",
+    "name": "Blackjack",
+    "srcImg": "https://staticff.kvwuua.com/group2/M00/02/E6/rBQVwWKDX6aAUmEVAABQuFNMl1M80.webp",
+    "bgImg": "https://staticff.kvwuua.com/group2/M00/02/E6/rBQVwWKDW1aAbXCBAABwDMDwI8g16.webp",
+    "url": "/",
+    "new": false
+  },
+  {
+    "id": "14",
+    "name": "Roulette",
+    "srcImg": "https://staticff.kvwuua.com/group2/M00/00/6A/rBSMGWKDX4mAe2LWAABHLHkHhmk08.webp",
+    "bgImg": "https://staticff.kvwuua.com/group2/M00/02/E6/rBQVwWKDWzyAf2TIAABwlkKXxC065.webp",
+    "url": "/",
+    "new": false
+  },
+  {
+    "id": "15",
+    "name": "Dragon Tiger",
+    "srcImg": "https://staticff.kvwuua.com/group2/M00/02/E6/rBQVwWKDX4GAJ7HUAABMiO2DnAY32.webp",
+    "bgImg": "https://staticff.kvwuua.com/group2/M00/02/E6/rBQVwWKDWyCAaoXyAACDbMchjOY36.webp",
+    "url": "/",
+    "new": false
+  },
+  {
+    "id": "16",
+    "name": "Sicbo",
+    "srcImg": "https://staticff.kvwuua.com/group2/M00/00/6A/rBSMGWKDX2CAECmyAABDMIyeUfs59.webp",
+    "bgImg": "https://staticff.kvwuua.com/group2/M00/02/E6/rBQVwWKDW7GAaGIFAAB3wtO3wKU76.webp",
+    "url": "/",
+    "new": false
+  }
+]

@@ -1,0 +1,122 @@
+[
+  {
+    "id": "1",
+    "name": "Fishing King",
+    "srcImg": "https://hx1web.f384883be.com/static/media/EN.1144b362.png",
+    "bgImg": "https://hx1web.f384883be.com/static/media/BG.2a87fdd1.png",
+    "url": "/",
+    "new": false
+  },
+  {
+    "id": "2",
+    "name": "Barbarian Fury",
+    "srcImg": "https://staticff.kvwuua.com/group1/M00/00/79/rBQVwGKMUUiAORMaAAA063Qwx7M502.png",
+    "bgImg": "https://staticff.kvwuua.com/group1/M00/00/79/rBSMGGKMUUWAbcy9AAFGKKYWrX8421.png",
+    "url": "/",
+    "new": true
+  },
+  {
+    "id": "3",
+    "name": "Hot For Cash",
+    "srcImg": "https://staticff.kvwuua.com/group1/M00/00/79/rBQVwGKMUXyAIMvcAAA3EazjiAI293.png",
+    "bgImg": "https://staticff.kvwuua.com/group1/M00/00/79/rBSMGGKMUXqAf_dDAADSU7wsb1E729.png",
+    "url": "/",
+    "new": true
+  },
+  {
+    "id": "4",
+    "name": "Diamond Riches",
+    "srcImg": "https://staticff.kvwuua.com/group1/M00/00/79/rBSMGGKMUj-AGihyAAA3j2QPA-Y652.png",
+    "bgImg": "https://staticff.kvwuua.com/group1/M00/00/79/rBQVwGKMUj2AODVFAAE0-r_UyaA557.png",
+    "url": "/",
+    "new": true
+  },
+  {
+    "id": "5",
+    "name": "Buffalo Hold & Win",
+    "srcImg": "https://staticff.kvwuua.com/group1/M00/00/79/rBSMGGKMUhCAde3YAAA7nLexDGw753.png",
+    "bgImg": "https://staticff.kvwuua.com/group1/M00/00/79/rBQVwGKMUg2ARnxgAAH0kKmxDr0807.png",
+    "url": "/",
+    "new": true
+  },
+  {
+    "id": "6",
+    "name": "Crazy Donuts",
+    "srcImg": "https://staticff.kvwuua.com/group1/M00/00/79/rBSMGGKMUe-AQE89AAA4bbAxYvY663.png",
+    "bgImg": "https://staticff.kvwuua.com/group1/M00/00/79/rBQVwGKMUe2APFHEAAC4XRLVYsI640.png",
+    "url": "/",
+    "new": true
+  },
+  {
+    "id": "7",
+    "name": "Chaos Crew",
+    "srcImg": "https://staticff.kvwuua.com/group2/M00/00/7B/rBSMGWKMe1GAWcIoAAA24NB8tVs641.png",
+    "bgImg": "https://staticff.kvwuua.com/group1/M00/00/79/rBSMGGKMUb6ABzWYAAHIB4FPPLs988.png",
+    "url": "/",
+    "new": true
+  },
+  {
+    "id": "8",
+    "name": "The Dragon Pearl Gold",
+    "srcImg": "https://staticff.kvwuua.com/group2/M00/02/F4/rBQVwWKLVkiAQ8QNAAA9Z8RFTFI030.png",
+    "bgImg": "https://staticff.kvwuua.com/group2/M00/02/F4/rBQVwWKLVkaAXahIAAFGnEhmDqg251.png",
+    "url": "/",
+    "new": false
+  },
+  {
+    "id": "9",
+    "name": "Gates Of Olympus",
+    "srcImg": "https://staticff.kvwuua.com/group2/M00/00/78/rBSMGWKLVtuADwUdAAA8fPFewt4083.png",
+    "bgImg": "https://staticff.kvwuua.com/group1/M00/00/65/rBQVwGJ8mgSACImjAAQRtweUO5o769.png",
+    "url": "/",
+    "new": false
+  },
+  {
+    "id": "10",
+    "name": "Sweet Bonanza Xmas",
+    "srcImg": "https://staticff.kvwuua.com/group1/M00/00/6A/rBQVwGKDT2CAebRUAAC1Av48ji4468.png",
+    "bgImg": "https://staticff.kvwuua.com/group1/M00/00/65/rBQVwGJ8qEuASmb-AAMGyla4RBM261.png",
+    "url": "/",
+    "new": false
+  },
+  {
+    "id": "11",
+    "name": "Great Rhino Megaways",
+    "srcImg": "https://staticff.kvwuua.com/group2/M00/02/F4/rBQVwWKLWFCAV-59AABB1doPo_M169.png",
+    "bgImg": "https://staticff.kvwuua.com/group2/M00/00/78/rBSMGWKLWE6AeldtAAGLbno8C00612.png",
+    "url": "/",
+    "new": false
+  },
+  {
+    "id": "12",
+    "name": "Santa's Wonderland",
+    "srcImg": "https://staticff.kvwuua.com/group2/M00/02/F4/rBQVwWKLWKiAPKTCAAA80ydljR0225.png",
+    "bgImg": "https://staticff.kvwuua.com/group2/M00/00/78/rBSMGWKLWKaAfjnNAAaqWLV9PFI912.png",
+    "url": "/",
+    "new": false
+  },
+  {
+    "id": "13",
+    "name": "Joker King",
+    "srcImg": "https://staticff.kvwuua.com/group2/M00/02/F4/rBQVwWKLWLuAbA_5AAA3VTRV8XU949.png",
+    "bgImg": "https://staticff.kvwuua.com/group2/M00/00/78/rBSMGWKLWLeAUmQMAAEVFuh003I299.png",
+    "url": "/",
+    "new": false
+  },
+  {
+    "id": "14",
+    "name": "Magic Journey",
+    "srcImg": "https://staticff.kvwuua.com/group2/M00/00/78/rBSMGWKLWOOAQosSAAA6B8UVBiw956.png",
+    "bgImg": "https://staticff.kvwuua.com/group2/M00/02/F4/rBQVwWKLWOGASvwhAAEopDWICSY903.png",
+    "url": "/",
+    "new": false
+  },
+  {
+    "id": "15",
+    "name": "Release The Kraken",
+    "srcImg": "https://staticff.kvwuua.com/group2/M00/00/78/rBSMGWKLWPaAI3POAAA8d1f6cHI645.png",
+    "bgImg": "https://staticff.kvwuua.com/group2/M00/02/F4/rBQVwWKLWPOAWS3rAAEwZdr_P1Y511.png",
+    "url": "/",
+    "new": false
+  }
+]

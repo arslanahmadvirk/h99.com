@@ -1,0 +1,66 @@
+[
+  {
+    "id": "1",
+    "name": "Rock Paper Scissors",
+    "srcImg": "https://staticff.kvwuua.com/group2/M00/02/F6/rBQVwWKMZ_2ACFB-AABa7lTekA460.webp",
+    "bgImg": "https://staticff.kvwuua.com/group2/M00/00/7A/rBSMGWKMZ_uAAypMAABJ4G9_w8I27.webp",
+    "url": "/",
+    "new": false
+  },
+  {
+    "id": "2",
+    "name": "Astroboomers Turbo",
+    "srcImg": "https://staticff.kvwuua.com/group2/M00/00/7A/rBSMGWKMVDiAXtdEAABMTHU3cTg12.webp",
+    "bgImg": "https://staticff.kvwuua.com/group2/M00/02/F5/rBQVwWKMVDaAMRrOAABUUFoBtW492.webp",
+    "url": "/",
+    "new": false
+  },
+  {
+    "id": "3",
+    "name": "The Wheel Of Steal",
+    "srcImg": "https://staticff.kvwuua.com/group2/M00/00/7A/rBSMGWKMVMOAaZVlAABEWNzHPxc44.webp",
+    "bgImg": "https://staticff.kvwuua.com/group2/M00/02/F6/rBQVwWKMVMCAZgwqAABdJPuT43k48.webp",
+    "url": "/",
+    "new": false
+  },
+  {
+    "id": "4",
+    "name": "Astroboomers To The Moon",
+    "srcImg": "https://staticff.kvwuua.com/group2/M00/00/79/rBSMGWKMVA6AHpkiAABQMCoihuE42.webp",
+    "bgImg": "https://staticff.kvwuua.com/group2/M00/02/F5/rBQVwWKMVAuAMQACAABnjtFfg-A50.webp",
+    "url": "/",
+    "new": false
+  },
+  {
+    "id": "5",
+    "name": "Bounty On The High Seas",
+    "srcImg": "https://staticff.kvwuua.com/group2/M00/00/7A/rBSMGWKMVEuAVKIZAABNOHESEvE98.webp",
+    "bgImg": "https://staticff.kvwuua.com/group2/M00/02/F5/rBQVwWKMVEiAdC8mAABM2uatS7U80.webp",
+    "url": "/",
+    "new": false
+  },
+  {
+    "id": "6",
+    "name": "Shamrock Treasures",
+    "srcImg": "https://staticff.kvwuua.com/group2/M00/00/7A/rBSMGWKMVLCAQeOtAABQughuhY024.webp",
+    "bgImg": "https://staticff.kvwuua.com/group2/M00/02/F6/rBQVwWKMVK6AEs9CAACLMBQRFfs69.webp",
+    "url": "/",
+    "new": false
+  },
+  {
+    "id": "7",
+    "name": "Five Ball Fiesta",
+    "srcImg": "https://staticff.kvwuua.com/group2/M00/00/7A/rBSMGWKMVIiAaz9gAABDYkwzoec77.webp",
+    "bgImg": "https://staticff.kvwuua.com/group2/M00/02/F6/rBQVwWKMVIWAf-esAABclOcXffc90.webp",
+    "url": "/",
+    "new": false
+  },
+  {
+    "id": "8",
+    "name": "Cyber Hunter 2080",
+    "srcImg": "https://staticff.kvwuua.com/group2/M00/00/7A/rBSMGWKMVHqAHSpRAAC68KO_JJ449.webp",
+    "bgImg": "https://staticff.kvwuua.com/group2/M00/02/F5/rBQVwWKMVHeAJ7SDAADisp9xw_048.webp",
+    "url": "/",
+    "new": false
+  }
+]
