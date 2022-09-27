@@ -4,9 +4,24 @@ import Button from "@mui/material/Button";
 import IconButton from "@mui/material/IconButton";
 import Link from "next/link";
 import { useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { logOutRequest } from "../../redux/auth/auth.actions";
+// import notification from "../notification/Notification";
 
 function TopLinks() {
-  const [loggedin, setLoggedin] = useState(false);
+  const isLoggedIn = useSelector(({ auth }) => auth.isLoggedIn);
+  const [loading, setLoading] = useState(false);
+  const dispatch = useDispatch();
+
+  const handleLoading = () => {
+    setLoading(false);
+  };
+
+  // const handleLogout = (e) => {
+  //   e.preventDefault();
+  //   notification.showSuccessAlert("Welcome Back Logged In successfully");
+  // };
+
   return (
     <div className="flex mx-auto w-4/5 py-3">
       <IconButton color="primary" aria-label="upload picture" component="label">
@@ -18,21 +33,23 @@ function TopLinks() {
           alt="download icon"
         />
       </IconButton>
-      {loggedin ? (
+      {isLoggedIn ? (
         <>
           {" "}
-          <Link href="/login" passHref>
-            <button
-              type="button"
-              class="text-black bg-white hover:bg-white focus:outline-none focus:ring-4 focus:ring-white font-medium rounded-full text-sm px-7 py-2 text-center mr-2 mb-2 dark:focus:ring-white"
-            >
-              Logout
-            </button>
-          </Link>
+          <button
+            type="button"
+            class="text-black bg-white hover:bg-white focus:outline-none focus:ring-4 focus:ring-white font-medium rounded-full text-sm px-6 py-2 text-center mr-2 mb-2 dark:focus:ring-white"
+            onClick={() => {
+              setLoading(true);
+              dispatch(logOutRequest(handleLoading));
+            }}
+          >
+            Logout
+          </button>
           <Link href="/dashboard/deposit" passHref>
             <button
               type="button"
-              class="text-black bg-yellow-400 hover:bg-yellow-500 focus:outline-none focus:ring-4 focus:ring-yellow-300 font-medium rounded-full text-sm px-7 py-2 text-center mr-2 mb-2 dark:focus:ring-yellow-900"
+              class="text-black bg-yellow-400 hover:bg-yellow-500 focus:outline-none focus:ring-4 focus:ring-yellow-300 font-medium rounded-full text-sm px-4 py-2 text-center mr-2 mb-2 dark:focus:ring-yellow-900"
             >
               Dashboard
             </button>

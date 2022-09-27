@@ -4,6 +4,9 @@ import { ThemeProvider, createTheme } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
 import "../styles/globals.css";
 import Layout from "../components/layouts/MainLayout";
+import { ReduxWrapper } from "../redux/store";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const theme = createTheme({
   palette: {
@@ -73,10 +76,15 @@ function App({ Component, pageProps }) {
     <ThemeProvider theme={theme}>
       <CssBaseline />
       <Layout>
+        <ToastContainer
+          autoClose={2000}
+          pauseOnHover={false}
+          pauseOnFocusLoss={false}
+        />
         <Component {...pageProps} />
       </Layout>
     </ThemeProvider>
   );
 }
 
-export default App;
+export default ReduxWrapper.withRedux(App);

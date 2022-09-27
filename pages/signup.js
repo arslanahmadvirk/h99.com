@@ -1,7 +1,44 @@
 import Image from "next/image";
 import Link from "next/link";
+import { useDispatch, useSelector } from "react-redux";
+import { useState, useEffect } from "react";
+import { userSignUpRequest } from "../redux/auth/auth.actions";
+import notification from "../components/notification/Notification";
 
 export default function SignUp() {
+  const [loading, setLoading] = useState(false);
+  const dispatch = useDispatch();
+  const [data, setData] = useState({
+    username: "",
+    firstname: "",
+    lastname: "",
+    email: "",
+    mobile_code: "",
+    mobile: "",
+    country_code: "",
+    country: "",
+    password: "",
+    password_confirmation: "",
+    agree: "",
+  });
+
+  const handleData = (key, value) => {
+    setData({ ...data, [key]: value });
+  };
+
+  const handleLoading = () => {
+    setLoading(false);
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (data.password !== data.password_confirmation) {
+      notification.showErrorAlert("Password not Matched");
+    } else {
+      setLoading(true);
+      dispatch(userSignUpRequest(data, handleLoading));
+    }
+  };
   return (
     <section className="flex flex-col items-center justify-center px-6 py-8 mx-auto lg:py-0 md:mt-12 md:mb-12">
       {/* <a href="#" className="flex items-center mb-6 text-2xl font-semibold text-gray-900 dark:text-white">
@@ -13,7 +50,10 @@ export default function SignUp() {
           <h1 className="text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl dark:text-white">
             Create new account
           </h1>
-          <form className="space-y-4 md:space-y-6" action="#">
+          <form
+            onSubmit={(e) => handleSubmit(e)}
+            className="space-y-4 md:space-y-6"
+          >
             <div>
               <label
                 for="username"
@@ -27,6 +67,7 @@ export default function SignUp() {
                 id="username"
                 className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                 placeholder="someone"
+                onChange={(e) => handleData("username", e.target.value)}
                 required
               />
             </div>
@@ -43,6 +84,7 @@ export default function SignUp() {
                 id="firstname"
                 className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                 placeholder="someone"
+                onChange={(e) => handleData("firstname", e.target.value)}
                 required
               />
             </div>
@@ -59,6 +101,7 @@ export default function SignUp() {
                 id="lastname"
                 className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                 placeholder="someone"
+                onChange={(e) => handleData("lastname", e.target.value)}
                 required
               />
             </div>
@@ -75,6 +118,7 @@ export default function SignUp() {
                 id="email"
                 className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                 placeholder="name@company.com"
+                onChange={(e) => handleData("email", e.target.value)}
                 required
               />
             </div>
@@ -92,6 +136,7 @@ export default function SignUp() {
                   id="mobilecode"
                   className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                   placeholder="123"
+                  onChange={(e) => handleData("mobile_code", e.target.value)}
                   required
                 />
               </div>
@@ -108,6 +153,7 @@ export default function SignUp() {
                   id="phonenumber"
                   className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                   placeholder="123456789"
+                  onChange={(e) => handleData("mobile", e.target.value)}
                   required
                 />
               </div>
@@ -126,6 +172,7 @@ export default function SignUp() {
                   id="countrycode"
                   className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                   placeholder="ID"
+                  onChange={(e) => handleData("country_code", e.target.value)}
                   required
                 />
               </div>
@@ -142,6 +189,7 @@ export default function SignUp() {
                   id="country"
                   className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                   placeholder="Indonesia"
+                  onChange={(e) => handleData("country", e.target.value)}
                   required
                 />
               </div>
@@ -159,6 +207,7 @@ export default function SignUp() {
                 id="password"
                 placeholder="••••••••"
                 className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                onChange={(e) => handleData("password", e.target.value)}
                 required
               />
             </div>
@@ -175,6 +224,9 @@ export default function SignUp() {
                 id="confirmpassword"
                 placeholder="••••••••"
                 className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                onChange={(e) =>
+                  handleData("password_confirmation", e.target.value)
+                }
                 required
               />
             </div>
@@ -184,7 +236,9 @@ export default function SignUp() {
                   id="iagree"
                   aria-describedby="iagree"
                   type="checkbox"
+                  value="yes"
                   className="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-primary-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-primary-600 dark:ring-offset-gray-800"
+                  onChange={(e) => handleData("agree", e.target.value)}
                   required
                 />
               </div>
