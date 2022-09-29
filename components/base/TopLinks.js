@@ -3,7 +3,7 @@ import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import IconButton from "@mui/material/IconButton";
 import Link from "next/link";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import {
   logOutRequest,
@@ -11,17 +11,10 @@ import {
 } from "../../redux/auth/auth.actions";
 
 function TopLinks() {
-  const languageData = useSelector(({ auth }) => auth.languageData);
   const isLoggedIn = useSelector(({ auth }) => auth.isLoggedIn);
   const [loading, setLoading] = useState(false);
   const [show, setShow] = useState(false);
   const dispatch = useDispatch();
-  const [data, setData] = useState({});
-  const [english, setEnglish] = useState({
-    Login: "Login",
-    Registration: "SignUp",
-    Dashboard: "Dashboard",
-  });
 
   const handleLoading = () => {
     setLoading(false);
@@ -30,14 +23,6 @@ function TopLinks() {
   const handleShow = () => {
     setShow(true);
   };
-
-  useEffect(() => {
-    if (Object.keys(languageData).length > 1) {
-      setData(languageData);
-    } else {
-      setData(english);
-    }
-  }, [languageData]);
 
   return (
     <div className="flex mx-auto w-4/5 py-3">
@@ -68,7 +53,7 @@ function TopLinks() {
               type="button"
               class="text-black bg-yellow-400 hover:bg-yellow-500 focus:outline-none focus:ring-4 focus:ring-yellow-300 font-medium rounded-full text-sm px-4 py-2 text-center mr-2 mb-2 dark:focus:ring-yellow-900"
             >
-              {data.Dashboard}
+              Dashboard
             </button>
           </Link>
         </>
@@ -80,7 +65,7 @@ function TopLinks() {
               type="button"
               class="text-black bg-white hover:bg-white focus:outline-none focus:ring-4 focus:ring-white font-medium rounded-full text-sm px-7 py-2 text-center mr-2 mb-2 dark:focus:ring-white"
             >
-              {data.Login}
+              Login
             </button>
           </Link>
           <Link href="/signup" passHref>
@@ -88,7 +73,7 @@ function TopLinks() {
               type="button"
               class="text-black bg-yellow-400 hover:bg-yellow-500 focus:outline-none focus:ring-4 focus:ring-yellow-300 font-medium rounded-full text-sm px-7 py-2 text-center mr-2 mb-2 dark:focus:ring-yellow-900"
             >
-              {data.Registration}
+              SignUp
             </button>
           </Link>
         </>

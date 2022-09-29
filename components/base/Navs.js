@@ -47,10 +47,12 @@ function Navs() {
   });
 
   useEffect(() => {
-    if (Object.keys(languageData).length > 1) {
-      setData(languageData);
-    } else {
-      setData(english);
+    if (languageData) {
+      if (Object.keys(languageData).length > 1) {
+        setData(languageData);
+      } else {
+        setData(english);
+      }
     }
   }, [languageData]);
 
