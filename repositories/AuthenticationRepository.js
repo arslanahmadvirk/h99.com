@@ -7,6 +7,8 @@ const routes = {
   deposit: "/api/user/deposit/insert",
   withdraw: "/api/user/withdraw/store",
   depositHistory: "/api/user/deposit/history",
+  profileUpdate: "/api/user/profile-setting",
+  languageChange: "/api/language-data/",
 };
 
 class AuthenticationRepository {
@@ -93,6 +95,34 @@ class AuthenticationRepository {
 
       return {
         data: data.data.deposit.data,
+      };
+    } catch (error) {
+      throw getError(error);
+    }
+  }
+  async profileUpdate(payload) {
+    try {
+      const request = await Repository.post(
+        `${baseUrl}${routes.profileUpdate}`,
+        payload
+      );
+      const { message } = request;
+      console.log(request.data.message);
+      return {
+        message: request.data.message,
+      };
+    } catch (error) {
+      throw getError(error);
+    }
+  }
+  async languageChange(payload) {
+    try {
+      const request = await Repository.get(
+        `${baseUrl}${routes.languageChange}${payload.language}`
+      );
+      const { message } = request;
+      return {
+        message: request.data.message.language_data,
       };
     } catch (error) {
       throw getError(error);

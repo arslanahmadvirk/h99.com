@@ -88,7 +88,7 @@ export default function Withdraw() {
               </div>
 
               <div>
-                <p className="text-sm">
+                <p className="text-sm text-white">
                   ⚠️The minimum withdraw is$10, make sure the info. is the same
                   as above
                 </p>
@@ -99,7 +99,9 @@ export default function Withdraw() {
               >
                 Withdraw
               </button>
-              <div className="text-sm">Estimated Transaction Fee:$1USDT</div>
+              <div className="text-sm text-white">
+                Estimated Transaction Fee:$1USDT
+              </div>
             </form>
           </div>
         </div>

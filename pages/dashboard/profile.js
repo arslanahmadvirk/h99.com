@@ -1,8 +1,35 @@
 import React from "react";
-
 import Admin from "../../layouts/Admin.js";
+import { profileUpdate } from "../../redux/auth/auth.actions.js";
+import { useDispatch, useSelector } from "react-redux";
+import { useState, useEffect } from "react";
 
 export default function Tables() {
+  const [loading, setLoading] = useState(false);
+  const dispatch = useDispatch();
+  const [data, setData] = useState({
+    firstname: "",
+    lastname: "",
+    address: "",
+    state: "",
+    city: "",
+    zip: "",
+  });
+
+  const handleData = (key, value) => {
+    setData({ ...data, [key]: value });
+  };
+
+  const handleLoading = () => {
+    setLoading(false);
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setLoading(true);
+    dispatch(profileUpdate(data, handleLoading));
+  };
+
   return (
     <Admin>
       <section className="flex flex-col items-center justify-center mx-auto lg:py-0 md:mt-12 md:mb-12">
@@ -15,23 +42,10 @@ export default function Tables() {
             <h1 className="text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl dark:text-white">
               Profile Update
             </h1>
-            <form className="space-y-4 md:space-y-6" action="#">
-              <div>
-                <label
-                  for="username"
-                  className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
-                >
-                  Username
-                </label>
-                <input
-                  type="text"
-                  name="username"
-                  id="username"
-                  className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                  placeholder="someone"
-                  required
-                />
-              </div>
+            <form
+              onSubmit={(e) => handleSubmit(e)}
+              className="space-y-4 md:space-y-6"
+            >
               <div>
                 <label
                   for="firstname"
@@ -45,6 +59,7 @@ export default function Tables() {
                   id="firstname"
                   className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                   placeholder="someone"
+                  onChange={(e) => handleData("firstname", e.target.value)}
                   required
                 />
               </div>
@@ -61,22 +76,41 @@ export default function Tables() {
                   id="lastname"
                   className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                   placeholder="someone"
+                  onChange={(e) => handleData("lastname", e.target.value)}
                   required
                 />
               </div>
               <div>
                 <label
-                  for="email"
+                  for="lastname"
                   className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
                 >
-                  Your email
+                  Address
                 </label>
                 <input
-                  type="email"
-                  name="email"
-                  id="email"
+                  type="text"
+                  name="lastname"
+                  id="lastname"
                   className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                  placeholder="name@company.com"
+                  placeholder="address"
+                  onChange={(e) => handleData("address", e.target.value)}
+                  required
+                />
+              </div>
+              <div>
+                <label
+                  for="lastname"
+                  className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                >
+                  State
+                </label>
+                <input
+                  type="text"
+                  name="lastname"
+                  id="lastname"
+                  className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                  placeholder="state"
+                  onChange={(e) => handleData("state", e.target.value)}
                   required
                 />
               </div>
@@ -86,48 +120,15 @@ export default function Tables() {
                     for="countries"
                     class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
                   >
-                    Mobile code
-                  </label>
-                  <input
-                    type="tel"
-                    name="mobilecode"
-                    id="mobilecode"
-                    className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                    placeholder="xx"
-                    required
-                  />
-                </div>
-                <div className="w-2/3">
-                  <label
-                    for="phonenumber"
-                    className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
-                  >
-                    Phone number
-                  </label>
-                  <input
-                    type="tel"
-                    name="phonenumber"
-                    id="phonenumber"
-                    className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                    placeholder="123456789"
-                    required
-                  />
-                </div>
-              </div>
-              <div className="flex flex-row space-x-4">
-                <div className="w-1/3">
-                  <label
-                    for="countries"
-                    class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
-                  >
-                    Country code
+                    Zip Code
                   </label>
                   <input
                     type="text"
                     name="countrycode"
                     id="countrycode"
                     className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                    placeholder="xx"
+                    placeholder="12345"
+                    onChange={(e) => handleData("zip", e.target.value)}
                     required
                   />
                 </div>
@@ -136,14 +137,15 @@ export default function Tables() {
                     for="country"
                     className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
                   >
-                    Country
+                    City
                   </label>
                   <input
                     type="text"
                     name="country"
                     id="country"
                     className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                    placeholder="abc"
+                    placeholder="city"
+                    onChange={(e) => handleData("city", e.target.value)}
                     required
                   />
                 </div>

@@ -29,7 +29,12 @@ a {
   }
 }
 
-
+.language-switch{
+  position: absolute;
+  margin-left: 10rem;
+  margin-top: 2rem;
+  transform: translate(0px, 10px);
+}
 
 @font-face {
   font-family: 'iconfont';

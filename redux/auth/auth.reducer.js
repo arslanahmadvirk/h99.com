@@ -5,6 +5,7 @@ export const initState = {
   user: null,
   token: null,
   depositHistory: null,
+  languageData: {},
 };
 function AuthReducer(state = initState, action) {
   switch (action.type) {
@@ -22,6 +23,11 @@ function AuthReducer(state = initState, action) {
       return {
         ...state,
         ...{ depositHistory: action.data },
+      };
+    case actionTypes.LANGUAGE_CHANGE_SUCCESS:
+      return {
+        ...state,
+        ...{ languageData: action.message },
       };
     case actionTypes.LOGOUT_SUCCESS:
       return initState;

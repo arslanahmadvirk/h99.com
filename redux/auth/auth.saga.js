@@ -14,6 +14,7 @@ import {
   loginSuccess,
   logOutSuccess,
   depositHistorySuccess,
+  languageChangeSuccess,
 } from "./auth.actions";
 import { appName } from "../../repositories/genericRepository";
 import notification from "../../components/notification/Notification";
@@ -111,6 +112,31 @@ function* depositHistorySaga() {
   }
 }
 
+function* profileUpdateSaga(action) {
+  try {
+    const { message } = yield call(AuthService.profileUpdate, action.payload);
+    notification.showSuccessAlert("Profile Updated Successfully");
+    action.callback();
+  } catch (error) {
+    notification.showErrorAlert(error);
+    action.callback();
+  } finally {
+    yield cancel();
+  }
+}
+
+function* languageChangeSaga(action) {
+  try {
+    const { message } = yield call(AuthService.languageChange, action.payload);
+    yield put(languageChangeSuccess(message));
+  } catch (error) {
+    console.log(error);
+    notification.showErrorAlert(error);
+  } finally {
+    yield cancel();
+  }
+}
+
 export default function* rootSaga() {
   yield all([takeEvery(actionTypes.USER_SIGNUP_REQUEST, userSignUpSaga)]);
   yield all([takeEvery(actionTypes.LOGIN_REQUEST, loginSaga)]);
@@ -119,5 +145,9 @@ export default function* rootSaga() {
   yield all([takeEvery(actionTypes.WITHDRAW_REQUEST, withdrawSaga)]);
   yield all([
     takeEvery(actionTypes.DEPOSIT_HISTORY_REQUEST, depositHistorySaga),
+  ]);
+  yield all([takeEvery(actionTypes.PROFILE_UPDATE, profileUpdateSaga)]);
+  yield all([
+    takeEvery(actionTypes.LANGUAGE_CHANGE_REQUEST, languageChangeSaga),
   ]);
 }

@@ -12,12 +12,14 @@ export default function Sidebar() {
           <ul className="md:flex-col md:min-w-full flex flex-col list-none space-y-5 md:space-y-10 md:mt-5 mb-5 mx-auto">
             <li className="items-center mt-5 text-center">
               <Link href="/dashboard/deposit">
-                <a className=" py-2 px-12 rounded-full bg-blue-900">Deposit</a>
+                <a className=" py-2 px-12 rounded-full bg-blue-900 text-white">
+                  Deposit
+                </a>
               </Link>
             </li>
             <li className="items-center mt-5 text-center">
               <Link href="/dashboard/deposit-history">
-                <a className=" py-2 px-5 rounded-full bg-blue-900">
+                <a className=" py-2 px-5 rounded-full bg-blue-900 text-white">
                   Deposit History
                 </a>
               </Link>
@@ -25,13 +27,15 @@ export default function Sidebar() {
 
             <li className="items-center text-center">
               <Link href="/dashboard/withdraw">
-                <a className=" py-2 px-11 rounded-full bg-blue-900">Withdraw</a>
+                <a className=" py-2 px-11 rounded-full bg-blue-900 text-white">
+                  Withdraw
+                </a>
               </Link>
             </li>
 
             <li className="items-center text-center">
               <Link href="/dashboard/profile">
-                <a className=" py-2 px-6 rounded-full bg-blue-900">
+                <a className=" py-2 px-6 rounded-full bg-blue-900 text-white">
                   Profile Update
                 </a>
               </Link>
@@ -39,21 +43,21 @@ export default function Sidebar() {
 
             <li className="items-center text-center">
               <Link href="/dashboard/change-password">
-                <a className=" py-2 px-4 rounded-full bg-blue-900">
+                <a className=" py-2 px-4 rounded-full bg-blue-900 text-white">
                   Change Password
                 </a>
               </Link>
             </li>
             <li className="items-center text-center">
               <Link href="/dashboard/maps">
-                <a className=" py-2 px-9 rounded-full bg-blue-900">
+                <a className=" py-2 px-9 rounded-full bg-blue-900 text-white">
                   Referral Link
                 </a>
               </Link>
             </li>
             <li className="items-center text-center">
               <Link href="/dashboard/maps">
-                <a className=" py-2 px-9 rounded-full bg-blue-900">
+                <a className=" py-2 px-9 rounded-full bg-blue-900 text-white">
                   Google 2FA
                 </a>
               </Link>

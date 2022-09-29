@@ -20,6 +20,9 @@ export function depositHistorySuccess(data) {
 export function userSignUpRequest(payload, callback) {
   return { type: actionTypes.USER_SIGNUP_REQUEST, payload, callback };
 }
+export function profileUpdate(payload, callback) {
+  return { type: actionTypes.PROFILE_UPDATE, payload, callback };
+}
 
 export function loginSuccess(user, token) {
   return { type: actionTypes.LOGIN_SUCCESS, user, token };
@@ -35,6 +38,14 @@ export function logOutRequest(callback) {
 
 export function logOutSuccess() {
   return { type: actionTypes.LOGOUT_SUCCESS };
+}
+
+export function languageChangeRequest(payload) {
+  return { type: actionTypes.LANGUAGE_CHANGE_REQUEST, payload };
+}
+
+export function languageChangeSuccess(message) {
+  return { type: actionTypes.LANGUAGE_CHANGE_SUCCESS, message };
 }
 
 export function forgotpasswordrequests(payload, callback) {
