@@ -1,5 +1,5 @@
 import axios from "axios";
-const baseDomain = "http://20.187.86.110:88";
+const baseDomain = "https://backoffice.autos";
 
 export const appName = "h99_project";
 
