@@ -73,16 +73,18 @@ function Header() {
   }, [isShrink]);
 
   return (
-    <HeaderWrapper component="header" className={isShrink && "shrink"}>
-      <div className="md:flex md:w-full space-x-12 md:justify-between mx-auto">
-        <SupportedBy />
-        <h1 className="text-4xl py-3 font-bold text-yellow-600 text-center">
-          H99.com
-        </h1>
-        <TopLinks />
-      </div>
-      <Navs />
-    </HeaderWrapper>
+    <div className="hidden md:flex">
+      <HeaderWrapper component="header" className={isShrink && "shrink"}>
+        <div className="md:flex md:w-full space-x-12 md:justify-between mx-auto">
+          <SupportedBy />
+          <h1 className="text-4xl py-3 font-bold text-yellow-600 text-center">
+            H99.com
+          </h1>
+          <TopLinks />
+        </div>
+        <Navs />
+      </HeaderWrapper>
+    </div>
   );
 }
 

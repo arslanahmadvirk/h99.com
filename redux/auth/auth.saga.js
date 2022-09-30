@@ -78,6 +78,7 @@ function* depositSaga(action) {
     const { data } = yield call(AuthService.deposit, action.payload);
     notification.showSuccessAlert("Deposit Created Successfully");
     action.callback();
+    Router.push("/dashboard/deposit");
   } catch (error) {
     console.log(error);
     notification.showErrorAlert(error);

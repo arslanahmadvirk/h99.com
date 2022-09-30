@@ -19,7 +19,7 @@ import slotsData from "../mocks/slots.json";
 
 function HomePage() {
   return (
-    <div className="">
+    <div className="mt-12">
       <Box component="section" id="banners" sx={{ pt: 3 }}>
         <Container maxWidth="xl">
           <div className="md:flex md:space-x-2">

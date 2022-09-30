@@ -24,7 +24,7 @@ export default function DepositHistory() {
     <Admin>
       <div class="overflow-x-auto relative shadow-md sm:rounded-lg md:mt-12">
         <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
-          <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+          <thead class="text-xs uppercase  bg-gray-700 text-gray-400">
             <tr>
               <th scope="col" class="py-3 px-6">
                 Transaction ID
@@ -46,10 +46,10 @@ export default function DepositHistory() {
           <tbody>
             {data.map((d, key) => (
               <>
-                <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                <tr class=" border-b bg-gray-900 border-gray-800">
                   <th
                     scope="row"
-                    class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+                    class="py-4 px-6 font-medium  whitespace-nowrap text-white"
                   >
                     {d.trx}
                   </th>

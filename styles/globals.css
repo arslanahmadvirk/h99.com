@@ -51,6 +51,10 @@ a {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.marginTop{
+  margin-top: 4rem;
+}
+
 .icon-a-StyleFilled3:before {
   content: '\e80b';
 }

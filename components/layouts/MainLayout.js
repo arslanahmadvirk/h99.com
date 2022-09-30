@@ -6,6 +6,7 @@ import Header from "./Header";
 import Footer from "./Footer";
 import BgStars from "../helpers/BgStars";
 import SupportButton from "../base/SupportButton";
+import Navbar from "./Navbar";
 
 const LayoutWrapper = styled(Box)(() => ({
   position: "relative",
@@ -22,6 +23,7 @@ function Layout({ children }) {
         </title>
       </Head>
       <Header />
+      <Navbar />
       <Box component="main">{children}</Box>
       <Footer />
       <SupportButton />
