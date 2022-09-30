@@ -24,7 +24,7 @@ export default function DepositPreview() {
           <div className="w-[250px] h-[250px]">
             <img src="/USDT.png" alt="USDT" />
           </div>
-          <div className="space-y-4">
+          <div className="space-y-4 text-white">
             <h1>
               Amount:{" "}
               <span className="text-green-500 font-bold">

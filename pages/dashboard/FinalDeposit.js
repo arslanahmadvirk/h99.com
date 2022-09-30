@@ -29,7 +29,7 @@ export default function FinalDeposit() {
   return (
     <Admin>
       <section className="flex flex-col items-center justify-center mx-auto lg:py-0 md:mt-12 md:mb-12">
-        <div className="w-full rounded-lg shadow border md:mt-0 sm:max-w-md p-5 text-center bg-gray-900 border-gray-800 space-y-5">
+        <div className="w-full rounded-lg shadow border text-white md:mt-0 sm:max-w-md p-5 text-center bg-gray-900 border-gray-800 space-y-5">
           <h1 className="text-center text-3xl font-bold ">Deposit Confirm</h1>
           <h1>
             You have requested{" "}
