@@ -1,5 +1,8 @@
+import { useState, useEffect } from "react";
 import Container from "@mui/material/Container";
 import Box from "@mui/material/Box";
+import { Grid } from "@mui/material";
+import { flexbox } from "@mui/system";
 import Typography from "@mui/material/Typography";
 import {
   Accordion,
@@ -18,6 +21,43 @@ import blockchainData from "../mocks/blockchain-games.json";
 import slotsData from "../mocks/slots.json";
 
 function HomePage() {
+  const [windowDimenion, detectHW] = useState(
+    typeof window !== "undefined"
+      ? {
+          winWidth: window.innerWidth,
+          winHeight: window.innerHeight,
+        }
+      : {
+          winWidth: 800,
+          winHeight: 800,
+        }
+  );
+
+  const [items, setItems] = useState();
+
+  const detectSize = () => {
+    detectHW({
+      winWidth: window.innerWidth,
+      winHeight: window.innerHeight,
+    });
+  };
+
+  useEffect(() => {
+    window.addEventListener("resize", detectSize);
+
+    return () => {
+      window.removeEventListener("resize", detectSize);
+    };
+  }, [windowDimenion]);
+
+  useEffect(() => {
+    if (windowDimenion.winWidth <= 800) {
+      setItems(3);
+    } else {
+      setItems(7);
+    }
+  }, [windowDimenion.winWidth]);
+
   return (
     <div className="mt-12">
       <Box component="section" id="banners" sx={{ pt: 3 }}>
@@ -133,42 +173,35 @@ function HomePage() {
       </Box>
       <Box component="section" id="blockchainGaming">
         <Container maxWidth="xl">
-          <Box
-            display="flex"
-            sx={{
-              width: "100%",
-              marginTop: "64px",
-            }}
-          >
-            <Box
-              sx={{
-                flex: "1 1",
-                width: "1px",
-              }}
-            >
-              <Typography
-                component="h5"
-                variant="h6"
-                color="primary.light"
-                fontWeight={600}
-                gutterBottom
-              >
-                Blockchain Games
-              </Typography>
-              <Swiper
-                scwHeight={470} // height of wrapper
-                bgiHeight={125} // height of item
-                data={blockchainData}
-                slidesPerView={4}
-                grid={{
-                  fill: "row",
-                  rows: 2,
-                }}
-                spaceBetween={16}
-              />
-            </Box>
-            <GameIntroCard />
-          </Box>
+          <div className="flex flex-col md:flex-row mt-5">
+            <div className="md:w-1/2">
+              <div>
+                <Typography
+                  component="h5"
+                  variant="h6"
+                  color="primary.light"
+                  fontWeight={600}
+                  gutterBottom
+                >
+                  Blockchain Games
+                </Typography>
+                <Swiper
+                  scwHeight={470} // height of wrapper
+                  bgiHeight={125} // height of item
+                  data={blockchainData}
+                  slidesPerView={3}
+                  grid={{
+                    fill: "row",
+                    rows: 2,
+                  }}
+                  spaceBetween={16}
+                />
+              </div>
+            </div>
+            <div className="">
+              <GameIntroCard />
+            </div>
+          </div>
         </Container>
       </Box>
       <Box component="section" id="liveCasino">
@@ -190,10 +223,10 @@ function HomePage() {
               Live Casino
             </Typography>
             <Swiper
-              scwHeight={440} // height of wrapper
+              scwHeight={350} // height of wrapper
               bgiHeight={123} // height of item
               data={liveCasinoData}
-              slidesPerView={8}
+              slidesPerView={3}
               grid={{
                 fill: "row",
                 rows: 2,
@@ -223,10 +256,10 @@ function HomePage() {
             </Typography>
             <Swiper
               isOneInTwoGrid // if the first item wants to wider
-              scwHeight={440} // height of wrapper
+              scwHeight={340} // height of wrapper
               bgiHeight={123} // height of item
               data={slotsData}
-              slidesPerView={8}
+              slidesPerView={3}
               grid={{
                 fill: "row",
                 rows: 2,

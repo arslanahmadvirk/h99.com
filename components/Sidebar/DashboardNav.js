@@ -3,6 +3,16 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 
 function DashboardNav() {
+  const [show, setShow] = useState(false);
+
+  const handleShow = () => {
+    if (show) {
+      setShow(false);
+    } else {
+      setShow(true);
+    }
+  };
+
   return (
     <div>
       <nav className="border-gray-800 px-2 sm:px-4 py-2.5 rounded bg-gray-900 md:hidden marginTop">
@@ -13,6 +23,7 @@ function DashboardNav() {
             className="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
             aria-controls="navbar-default"
             aria-expanded="false"
+            onClick={(e) => handleShow()}
           >
             <span className="sr-only">Open main menu</span>
             <svg
@@ -29,60 +40,67 @@ function DashboardNav() {
               ></path>
             </svg>
           </button>
-          <div className=" w-full md:block md:w-auto" id="navbar-default">
-            <ul className="flex flex-col p-4 mt-4 rounded-lg border bg-gray-900 border-gray-800">
-              <Link href="/dashboard/deposit" passHref>
-                <li>
-                  <a
-                    className="block py-2 pr-4 pl-3 rounded md:bg-transparent text-gray-500 md:p-0 hover:bg-white cursor-pointer"
-                    aria-current="page"
-                  >
-                    Deposit
-                  </a>
-                </li>
-              </Link>
-              <Link href="/dashboard/deposit-history" passHref>
-                <li>
-                  <a
-                    className="block py-2 pr-4 pl-3 rounded md:bg-transparent text-gray-500 md:p-0 hover:bg-white cursor-pointer"
-                    aria-current="page"
-                  >
-                    Deposit History
-                  </a>
-                </li>
-              </Link>
-              <Link href="/dashboard/withdraw" passHref>
-                <li>
-                  <a
-                    className="block py-2 pr-4 pl-3 rounded md:bg-transparent text-gray-500 md:p-0 hover:bg-white cursor-pointer "
-                    aria-current="page"
-                  >
-                    Withdraw
-                  </a>
-                </li>
-              </Link>
-              <Link href="/dashboard/profile" passHref>
-                <li>
-                  <a
-                    className="block py-2 pr-4 pl-3 rounded md:bg-transparent text-gray-500 md:p-0 hover:bg-white cursor-pointer "
-                    aria-current="page"
-                  >
-                    Profile Update
-                  </a>
-                </li>
-              </Link>
-              <Link href="/" passHref>
-                <li>
-                  <a
-                    className="block py-2 pr-4 pl-3 rounded md:bg-transparent text-gray-500 md:p-0 hover:bg-white cursor-pointer "
-                    aria-current="page"
-                  >
-                    Change Password
-                  </a>
-                </li>
-              </Link>
-            </ul>
-          </div>
+          {show ? (
+            <>
+              {" "}
+              <div className=" w-full md:block md:w-auto">
+                <ul className="flex flex-col p-4 mt-4 rounded-lg border bg-gray-900 border-gray-800">
+                  <Link href="/dashboard/deposit" passHref>
+                    <li>
+                      <a
+                        className="block py-2 pr-4 pl-3 rounded md:bg-transparent text-gray-500 md:p-0 hover:bg-white cursor-pointer"
+                        aria-current="page"
+                      >
+                        Deposit
+                      </a>
+                    </li>
+                  </Link>
+                  <Link href="/dashboard/deposit-history" passHref>
+                    <li>
+                      <a
+                        className="block py-2 pr-4 pl-3 rounded md:bg-transparent text-gray-500 md:p-0 hover:bg-white cursor-pointer"
+                        aria-current="page"
+                      >
+                        Deposit History
+                      </a>
+                    </li>
+                  </Link>
+                  <Link href="/dashboard/withdraw" passHref>
+                    <li>
+                      <a
+                        className="block py-2 pr-4 pl-3 rounded md:bg-transparent text-gray-500 md:p-0 hover:bg-white cursor-pointer "
+                        aria-current="page"
+                      >
+                        Withdraw
+                      </a>
+                    </li>
+                  </Link>
+                  <Link href="/dashboard/profile" passHref>
+                    <li>
+                      <a
+                        className="block py-2 pr-4 pl-3 rounded md:bg-transparent text-gray-500 md:p-0 hover:bg-white cursor-pointer "
+                        aria-current="page"
+                      >
+                        Profile Update
+                      </a>
+                    </li>
+                  </Link>
+                  <Link href="/dashboard/change-password" passHref>
+                    <li>
+                      <a
+                        className="block py-2 pr-4 pl-3 rounded md:bg-transparent text-gray-500 md:p-0 hover:bg-white cursor-pointer "
+                        aria-current="page"
+                      >
+                        Change Password
+                      </a>
+                    </li>
+                  </Link>
+                </ul>
+              </div>
+            </>
+          ) : (
+            <></>
+          )}
         </div>
       </nav>
     </div>

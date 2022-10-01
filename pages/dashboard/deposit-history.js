@@ -22,7 +22,7 @@ export default function DepositHistory() {
 
   return (
     <Admin>
-      <div class="overflow-x-auto relative shadow-md sm:rounded-lg md:mt-12">
+      <div class="overflow-x-auto relative shadow-md sm:rounded-lg mt-12 mb-12 md:mt-12 md:mb-0">
         <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
           <thead class="text-xs uppercase  bg-gray-700 text-gray-400">
             <tr>

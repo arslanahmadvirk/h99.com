@@ -87,24 +87,6 @@ function Navs() {
       icon: "",
       url: "/report",
     },
-    // {
-    //   id: 6,
-    //   name: 'J9BC',
-    //   icon: '',
-    //   url: '/j9bc',
-    // },
-    // {
-    //   id: 7,
-    //   name: 'J9 Brand',
-    //   icon: '',
-    //   url: '/j9-brand',
-    // },
-    // {
-    //   id: 8,
-    //   name: 'Promo',
-    //   icon: '',
-    //   url: '/promo',
-    // },
   ];
 
   return (

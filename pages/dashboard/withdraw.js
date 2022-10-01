@@ -27,7 +27,7 @@ export default function Withdraw() {
   };
   return (
     <Admin>
-      <section className="flex flex-col items-center justify-center mx-auto lg:py-0 md:mt-12 md:mb-12">
+      <section className="flex flex-col items-center justify-center mx-auto lg:py-0 mt-12 mb-12 md:mt-12 md:mb-12">
         <div className="w-full rounded-lg shadow border md:mt-0 sm:max-w-md xl:p-0 bg-gray-800 border-gray-700">
           <div className="p-6 space-y-4 md:space-y-6 sm:p-8">
             <form

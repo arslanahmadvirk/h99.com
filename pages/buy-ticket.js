@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function BuyTicket() {
   return (
-    <section className="flex flex-col items-center justify-center px-6 py-8 mx-auto lg:py-0 md:mt-12 md:mb-12">
+    <section className="flex flex-col items-center justify-center mt-10 md:mt-0 px-6 py-8 mx-auto lg:py-0 md:mt-12 md:mb-12">
       <div className="w-full  rounded-lg shadow border md:mt-0 sm:max-w-md xl:p-0 bg-gray-800 border-gray-700">
         <div className="p-6 space-y-4 md:space-y-6 sm:p-8">
           <h1 className="text-xl font-bold leading-tight tracking-tight  md:text-2xl text-white text-center">
@@ -22,7 +22,7 @@ export default function BuyTicket() {
               </label>
               <select
                 id="countries"
-                class=" border   text-sm rounded-lg   block w-full p-2.5 bg-gray-700 border-gray-600 placeholder-gray-400 text-white  "
+                class=" border text-sm rounded-lg block w-full p-2.5 bg-gray-700 border-gray-600 placeholder-gray-400 text-white  "
               >
                 <option selected>Choose plays</option>
                 <option value="1">1</option>

@@ -19,7 +19,7 @@ function Layout({ children }) {
       <BgStars />
       <Head>
         <title>
-          J9.COM &mdash; The First Cryptocurrency Casino Based on Web3.0
+          H99.COM &mdash; The First Cryptocurrency Casino Based on Web3.0
         </title>
       </Head>
       <Header />

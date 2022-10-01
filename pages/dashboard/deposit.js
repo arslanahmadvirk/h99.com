@@ -23,7 +23,7 @@ export default function Deposit() {
 
   return (
     <Admin>
-      <section className="flex flex-col items-center justify-center mx-auto lg:py-0 md:mt-12 md:mb-12">
+      <section className="flex flex-col items-center justify-center mx-auto lg:py-0 mt-12 mb-12 md:mt-12 md:mb-12">
         <div className="flex flex-col md:flex-row justify-center items-center w-full  rounded-lg shadow border md:mt-0 sm:max-w-md xl:p-0 bg-gray-900 border-gray-800">
           <div className="h-[250px] w-[250px]">
             <img src="/USDT.png" alt="USDT" />

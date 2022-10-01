@@ -40,8 +40,8 @@ export default function SignUp() {
     }
   };
   return (
-    <section className="flex flex-col items-center justify-center px-6 py-8 mx-auto lg:py-0 md:mt-12 md:mb-12">
-      <div className="w-full  rounded-lg shadow border md:mt-0 sm:max-w-md xl:p-0 bg-gray-900 border-gray-800">
+    <section className="flex flex-col items-center justify-center mt-10 md:mt-0 px-6 py-8 mx-auto lg:py-0 md:mt-12 md:mb-12">
+      <div className="w-full rounded-lg shadow border md:mt-0 sm:max-w-md xl:p-0 bg-gray-900 border-gray-800">
         <div className="p-6 space-y-4 md:space-y-6 sm:p-8">
           <h1 className="text-xl font-bold leading-tight tracking-tight  md:text-2xl text-white">
             Create new account

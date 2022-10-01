@@ -1,34 +1,37 @@
-import { styled } from '@mui/material/styles';
-import Card from '@mui/material/Card';
-import CardContent from '@mui/material/CardContent';
-import Typography from '@mui/material/Typography';
-import Button from '../Button';
+import { styled } from "@mui/material/styles";
+import Card from "@mui/material/Card";
+import CardContent from "@mui/material/CardContent";
+import Typography from "@mui/material/Typography";
+import Button from "../Button";
 
 const GameIntroWrapper = styled(Card)(() => ({
-  position: 'relative',
-  width: '701px',
-  marginLeft: '16px',
-  borderRadius: '16px',
-  display: 'flex',
-  flexDirection: 'column',
+  position: "relative",
+  width: "650px",
+  "@media (max-width: 567.98px)": {
+    width: "300px",
+  },
+  marginLeft: "5px",
+  borderRadius: "16px",
+  display: "flex",
+  flexDirection: "column",
   background:
     'no-repeat top / cover url("https://hx1web.f384883be.com/static/media/PC-Blockchain@2x.1b117fdc.png"), linear-gradient(180deg, #22073D00 0%, #8104A0 100%)',
-  cursor: 'pointer',
-  '& .rocket-eject': {
-    pointerEvents: 'none',
-    position: 'absolute',
-    right: '-23%',
-    bottom: '-10%',
-    width: '100%',
+  cursor: "pointer",
+  "& .rocket-eject": {
+    pointerEvents: "none",
+    position: "absolute",
+    right: "-23%",
+    bottom: "-10%",
+    width: "100%",
   },
-  '& .game-intro-info': {
-    padding: '26.5px 32px',
-    '& .info': {
+  "& .game-intro-info": {
+    padding: "26.5px 32px",
+    "& .info": {
       maxWidth: 410,
     },
-    '& .game-name': {
-      marginTop: '48px',
-      color: '#F1C44A',
+    "& .game-name": {
+      marginTop: "48px",
+      color: "#F1C44A",
     },
   },
 }));
@@ -50,7 +53,7 @@ function GameIntro() {
               lineHeight={2}
               fontWeight={700}
               gutterBottom
-              sx={{ color: '#CACAFF' }}
+              sx={{ color: "#CACAFF" }}
             >
               Blockchain Gaming
             </Typography>
@@ -59,20 +62,21 @@ function GameIntro() {
               variant="body2"
               lineHeight="28px"
               gutterBottom
-              sx={{ color: 'rgba(202, 202, 255, 0.6)' }}
+              sx={{ color: "rgba(202, 202, 255, 0.6)" }}
             >
-              The algorithm of blockchain gaming industry generates real randomness with transparent
-              and verifiable ways, and can be examined by all players.
+              The algorithm of blockchain gaming industry generates real
+              randomness with transparent and verifiable ways, and can be
+              examined by all players.
             </Typography>
             <Typography
               component="p"
               variant="body2"
               lineHeight="28px"
               gutterBottom
-              sx={{ color: 'rgba(202, 202, 255, 0.6)' }}
+              sx={{ color: "rgba(202, 202, 255, 0.6)" }}
             >
-              All the results of blockchain games cannot be set in advance, even the banker cannot
-              modify betting status.
+              All the results of blockchain games cannot be set in advance, even
+              the banker cannot modify betting status.
             </Typography>
           </div>
           <div className="game-name">
@@ -97,7 +101,10 @@ function GameIntro() {
             splash
           >
             PLAY
-            <span className="icon iconfont icon-chevron-right" style={{ marginLeft: 6 }} />
+            <span
+              className="icon iconfont icon-chevron-right"
+              style={{ marginLeft: 6 }}
+            />
           </Button>
         </div>
       </CardContent>

@@ -73,8 +73,8 @@ function Header() {
   }, [isShrink]);
 
   return (
-    <div className="hidden md:flex">
-      <HeaderWrapper component="header" className={isShrink && "shrink"}>
+    <HeaderWrapper component="header" className={isShrink && "shrink"}>
+      <div className="hidden md:flex-col md:flex">
         <div className="md:flex md:w-full space-x-12 md:justify-between mx-auto">
           <SupportedBy />
           <h1 className="text-4xl py-3 font-bold text-yellow-600 text-center">
@@ -83,8 +83,8 @@ function Header() {
           <TopLinks />
         </div>
         <Navs />
-      </HeaderWrapper>
-    </div>
+      </div>
+    </HeaderWrapper>
   );
 }
 
