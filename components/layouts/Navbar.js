@@ -173,7 +173,7 @@ function Navbar() {
             <button
               data-collapse-toggle="navbar-sticky"
               type="button"
-              className="inline-flex items-center p-2 text-sm  rounded-lg md:hidden focus:outline-none focus:ring-2   hover:bg-gray-700 focus:ring-gray-600"
+              className="inline-flex items-center p-2 text-sm rounded-lg md:hidden focus:outline-none focus:ring-2 ring-gray-200 text-gray-400 hover:bg-gray-700 focus:ring-gray-600"
               aria-controls="navbar-sticky"
               aria-expanded="false"
             >
