@@ -1170,7 +1170,7 @@ function Navbar() {
                           required
                         />
                       </div>
-                      <div className="flex flex-row space-x-4">
+                      <div className="flex flex-row space-x-2">
                         <div className="w-1/2">
                           <label
                             for="firstname"
@@ -1230,7 +1230,7 @@ function Navbar() {
                           required
                         />
                       </div>
-                      <div className="flex flex-row space-x-4">
+                      <div className="flex flex-row space-x-2">
                         <div className="w-1/3">
                           <label
                             for="countries"
@@ -1270,7 +1270,7 @@ function Navbar() {
                           />
                         </div>
                       </div>
-                      <div className="flex flex-row space-x-4">
+                      <div className="flex flex-row space-x-2">
                         <div className="w-1/3">
                           <label
                             for="countries"
@@ -1310,7 +1310,7 @@ function Navbar() {
                           />
                         </div>
                       </div>
-                      <div className="flex flex-row space-x-4">
+                      <div className="flex flex-row space-x-2">
                         <div className="w-1/2">
                           <label
                             for="password"
