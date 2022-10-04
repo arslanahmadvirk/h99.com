@@ -23,7 +23,7 @@ function* userSignUpSaga(action) {
   try {
     const { data } = yield call(AuthService.userRegister, action.payload);
     notification.showSuccessAlert("Account Created Successfully");
-    Router.push("/login");
+    Router.push("/");
     action.callback();
   } catch (error) {
     console.log("Error: ", error);
@@ -65,7 +65,7 @@ function* logOutSaga(action) {
     localStorage.removeItem(`token`);
     notification.showSuccessAlert("Logout Successfully");
     action.callback();
-    Router.push("/login");
+    Router.push("/");
     yield put(logOutSuccess());
   } catch (err) {
     notification.showErrorAlert(err);

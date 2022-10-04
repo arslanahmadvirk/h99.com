@@ -20,11 +20,11 @@ export default function DepositPreview() {
   return (
     <Admin>
       <div className="bg-gray-800 mt-12 mb-12">
-        <div className="flex flex-col items-center justify-center mx-auto lg:py-0 md:mt-12 md:mb-12 md:flex-row bg-gray-800">
+        <div className="flex flex-col items-center justify-center mx-auto lg:py-0 md:mt-12 md:mb-12 md:flex-row bg-gray-800 text-white">
           <div className="w-[250px] h-[250px]">
             <img src="/USDT.png" alt="USDT" />
           </div>
-          <div className="space-y-4">
+          <div className="space-y-4 text-white">
             <h1>
               Amount:{" "}
               <span className="text-green-500 font-bold">
